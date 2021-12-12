@@ -6,7 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -40,7 +40,6 @@ hr{
         
     margin: 0;
     height: 2px;
-    
     padding-left: 5px;
     padding-right: 20px;
 }
@@ -76,7 +75,7 @@ header {
     -moz-border-radius:5px;
     border-radius:5px;
     font-size: 1.1rem;
-    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
    
 
 
@@ -93,6 +92,7 @@ header {
     padding: 8px;
     margin-left: 8px;
     text-transform: uppercase;   /* Texto pagina pequena e letras maiusculas*/
+    
 }
 .menu a:hover { 
     background: #fed112;
@@ -255,12 +255,18 @@ header {
     height: 200px;
     width: 230px;
     float: left;
-    margin: 5px;
     color: #fff;
     font-size: 14px;
 
 }
-
+.conteudo a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.conteudo abbr {
+    text-decoration: none;
+    
+}
 
 #boxes{
     width: 500px;
@@ -268,18 +274,16 @@ header {
     float: right;
     padding-top: 100px ;
     padding-right: 290px;
-    
+    font-weight: normal;    
 }
 
 .maps iframe { 
     max-width: 100%;
     padding-top:80px;
-    padding-left: 290px;
+    padding-left: 260px;
     height: 350px;
     width: 30%;
     
-    
-
 }
 
 .texto_contato h2{ /*TEXTO TOPO 'CONTATO' */
@@ -308,13 +312,14 @@ header {
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    box-shadow: 3px 5px 13px rgb(87, 87, 87);
     z-index: 1000;
+    
 }
 .fa-whatsapp{
         margin-top: 15px;
+        
 }
-
 
 
 
@@ -322,7 +327,7 @@ footer{
     padding-top: 30px;
     height: 60px;
     max-width: 100%;
-    text-align: right;
+    text-align: center;
     background: #fed31290;
     font-size: 14px;
 
@@ -331,7 +336,7 @@ footer{
 footer a{
     text-decoration: none;
     color: black;
-    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
     
     
     
@@ -341,8 +346,6 @@ footer:hover a{
     
 
 }/* cabeçalho*/
-
-
 
 .redes{
     padding: 5px;
@@ -360,9 +363,6 @@ footer:hover a{
     
 
 }
-
-
-
 
 @media (max-width: 768px) {
     body{

@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Teko&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+    
+#logo img{
+   width: 120px;
+   height: 80px;
+   
+   
+}
+body{
+    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+   
+}
+hr{
+    border-color: #fed112;
+    background: #fed112;
+    width: 90px;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 50px; /*arredondar bordas hr*/
+    
+    
+}
+#boxes hr{
+        
+    margin: 0;
+    height: 2px;
+    
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+nav li{
+    list-style: none; 
+    display: inline;
+    
+}
+header {
+    background: #242283 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px ;
+    align-items: center;
+    height: 80px;
+    z-index: 100;
+    position: -webkit-sticky; /* fixar cabecalho*/
+    position: sticky; /* fixar cabecalho*/
+    top: 0; /* fixar cabecalho*/
+}   
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin:0;
+    border: 0px solid #242283; 
+    background: #242283;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size: 1.1rem;
+    -webkit-transition: .2s ease-in;
+   
+
+
+}
+
+.menu{     /* estilo menu */
+    display: flex;
+    cursor: pointer;
+    
+}
+.menu li a {
+      
+    display: block;
+    padding: 8px;
+    margin-left: 8px;
+    text-transform: uppercase;   /* Texto pagina pequena e letras maiusculas*/
+}
+.menu a:hover { 
+    background: #fed112;
+    color: #000; 
+    border-color: #000  
+}
+.imagem_topo img{
+    
+    width: 100%;
+    max-width: 100%;
+    height:800px;
+
+}
+
+.estilo{  /* estilo horario */
+  
+  
+  max-width: 100%;
+  padding: 10px;
+  background: #fed11290;  
+  
+}
+
+
+.sobre{  /* começo estilo sobre */
+   
+    background: #242283;  
+    max-width: 100%;
+    height: 750px;
+    box-shadow: 0px 20px #fed11290;
+    padding-top: 100px;
+    align-self: auto;
+
+    
+}
+.txt_sobre h2{
+    color: #fff;
+    text-align: center;
+    font-family: 'teko',sans-serif;
+    font-size: 70px;
+    font-weight: 40;
+
+}
+.img_quem_somos{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 100px;
+ 
+}
+.descricao h4{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 40px;
+    padding: 60px ;
+    line-height: 30px;
+    font-weight: 40;
+    
+}
+   
+
+
+
+.svg_quem_somos{
+   position: absolute;
+    padding-top: 250px;
+    width: 100%;
+
+}
+
+
+/* serviços realizados*/
+.servicos{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-self: auto;
+    padding-left: 20px;
+    font-family: 'Roboto' ,sans-serif;
+    background: #b3aeae27; 
+}
+.txt_servicos{ 
+    font-family: 'Lobster',sans-serif;
+    color:black;
+    font-weight: 400;
+    
+    
+
+}
+.txt_servicos h2{
+    font-family: 'teko',sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+    background: #b3aeae27; 
+    font-weight: 400;
+}
+
+
+.fa-check{/* check serviços*/
+    color: #16b911;
+    padding-left: 100px;
+    font-size: 25px;
+    padding-top: 60px;
+    padding-right: 10px;
+    
+}
+
+#img_esquerda{
+    max-width: 100%;
+    border-radius: 10px 10px 10px;
+    box-shadow: 5px 5px 5px #00000091;
+
+}
+.descricao_servicos h4{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+/*Comeco marcas*/
+
+
+
+.marcas{
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    
+}
+.marcash2 h2{
+    font-size: 70px;
+    font-family: 'teko' ,sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+
+
+
+/*Começo  do conteudo contato*/
+.contato{
+
+    width: 100%;
+    background:#242283;
+    height:600px;
+    max-width: 100%;
+    
+}
+
+.conteudo{ /* BOX CONTEUDO -CONTATO - LOCALIZACAO */
+    height: 200px;
+    width: 230px;
+    float: left;
+    margin: 5px;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+
+#boxes{
+    width: 500px;
+    max-width: 100%;
+    float: right;
+    padding-top: 100px ;
+    padding-right: 290px;
+    
+}
+
+.maps iframe { 
+    max-width: 100%;
+    padding-top:80px;
+    padding-left: 290px;
+    height: 350px;
+    width: 30%;
+    
+    
+
+}
+
+.texto_contato h2{ /*TEXTO TOPO 'CONTATO' */
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 70px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+
+.google_reviews{
+    padding-top: 30px;
+}
+
+
+
+.whatsapp-link{   /*AJUSTES WHATSAPP*/
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+.fa-whatsapp{
+        margin-top: 15px;
+}
+
+
+
+
+footer{
+    padding-top: 30px;
+    height: 60px;
+    max-width: 100%;
+    text-align: right;
+    background: #fed31290;
+    font-size: 14px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    -webkit-transition: .2s ease-in;
+    
+    
+    
+}
+footer:hover a{
+    color: blue;
+    
+
+}/* cabeçalho*/
+
+
+
+.redes{
+    padding: 5px;
+    margin: 5px 2px;
+
+}
+.redes a {
+    text-decoration: none;
+}
+.icone:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.4s ease-out;
+    box-shadow: 4px 15px 16px 0px rgba(50, 50, 50, 0.39);
+    
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+    }
+    #topo{
+        max-width: 100%;
+    }
+
+    .sobre{
+        
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        min-height: 250px;
+        
+    }
+    .sobre img{
+        display: none;
+        
+    }
+    .svg_quem_somos{
+        
+        padding: 10px;
+    }
+    .servicos{
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        
+       
+
+    }
+    .descricao_servicos{
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+    }
+    .marcas{
+        display: contents;
+        align-items: left;
+       
+    }
+    #little{
+        display: none;
+    }
+    .contato{
+        display: block;
+        text-align: center;
+        
+       
+        
+
+    }
+    #boxes{
+        padding-right: 110px;
+        padding-right: 190px;
+        
+    }
+    .whatsapp-link {
+        display: none;
+    }
+    .maps{
+        display: none;
+        
+    }
+
+    svg{
+        visibility: hidden;
+    }
+    footer{
+        max-width: 100%;
+    }
+}
+@media (max-width: 1366px){
+    
+    .svg_quem_somos{
+        display: none;
+    }
+    #cabecalho h2{
+        font-size: 55px;
+    }
+    
+    #boxes{
+        padding-right: 90px;
+ 
+        
+    }
+    
+
+    .descricao_servicos h4 {
+        font-size: 14px;
+
+    }
+    .descricao_servicos i{
+        font-size: 14px;
+    }
+    .txt_servicos h2{
+        font-size: 55px;
+    }
+
+    #img_esquerda{
+        width: 500px;
+        height: 400px;
+    }
+    #boxes hr{
+        
+        margin: 0;
+        height: 2px;
+        
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    footer {
+        text-align: center;
+
+    }
+
+}
+
+#ultimo + div{/*RETIRAR IMG WEBHOST*/
+    visibility:hidden;
+}

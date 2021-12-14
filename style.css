@@ -204,8 +204,14 @@ header {
 
 #img_esquerda{
     max-width: 100%;
-    border-radius: 10px 10px 10px;
-    box-shadow: 5px 5px 5px #00000091;
+    border-radius: 8px 8px 8px;
+    box-shadow: 2px 5px 5px #00000091;
+
+}
+#img_servicos{
+    max-width: 100%;
+    border-radius: 8px 8px 8px;
+    box-shadow: 2px 5px 5px #00000091;
 
 }
 .descricao_servicos h4{
@@ -223,9 +229,9 @@ header {
 .marcas{
     display: flex;
     max-width: 100%;
-    padding-bottom: 20px;
+    
     justify-content: space-evenly;
-    padding-left: 20px;
+    
     
 }
 .marcash2 h2{
@@ -385,19 +391,21 @@ footer:hover a{
 
     .sobre{
         
-        width: 100%;
-        height: 70vh;
+        width: auto;
+        height: 10%;
         justify-content: center;
         min-height: 250px;
         
+        
     }
+    
     .sobre img{
         display: none;
         
     }
-    .svg_quem_somos{
-        
-        padding: 10px;
+    
+    .img_quem_somos{
+        padding-top: 2px;
     }
     .servicos{
         max-width: 100%;
@@ -408,40 +416,50 @@ footer:hover a{
        
 
     }
-    .descricao_servicos{
-        max-width: 100%;
-        flex-wrap: wrap;
-        align-items: flex-start;
+    
+  
+    #img_servicos{
         
-    }
-    .marcas{
-        display: contents;
-        align-items: left;
+        width: 320px;
+        height: 320px;
+        
        
     }
+    
+    .fa-check{
+        padding-top: 40px;
+    }
+   
+   
     #little{
         display: none;
+        
     }
     .contato{
         display: block;
-        text-align: center;
+        height: 900px;
+        
         
        
         
 
     }
     #boxes{
-        padding-right: 110px;
-        padding-right: 190px;
+      padding-right: 71px;  
+        
         
     }
-    .whatsapp-link {
-        display: none;
-    }
-    .maps{
-        display: none;
+    
+    .maps iframe{
+        
+        width: 470px;
+        height: 260px;
+        padding-left: 155px;
+        padding-top: 0px;
+        
         
     }
+
 
     svg{
         visibility: hidden;
@@ -453,14 +471,14 @@ footer:hover a{
 @media (max-width: 1366px){
     
     .svg_quem_somos{
-        display: none;
+        padding: 290px 10px;
     }
     #cabecalho h2{
         font-size: 55px;
     }
     
     #boxes{
-        padding-right: 90px;
+        padding-right: 71px;
  
         
     }

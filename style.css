@@ -22,11 +22,8 @@ html{
 }
 body{
     font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-
-   
 }
-hr{
+hr{ /* DESIGN HR PARA H1*/
     border-color: #fed112;
     background: #fed112;
     width: 90px;
@@ -34,10 +31,8 @@ hr{
     margin: 0 auto;
     border-radius: 50px; /*arredondar bordas hr*/
     
-    
 }
-#boxes hr{
-        
+#boxes hr{ /* DESIGN HR PARA DIV BOX */
     margin: 0;
     height: 2px;
     padding-left: 5px;
@@ -68,7 +63,6 @@ header {
     margin:0;
     border: 0px solid #242283; 
     background: #242283;
-    text-decoration: none;
     color:rgb(255, 255, 255);
     /* cantos arredondados */
     -webkit-border-radius:5px;
@@ -107,22 +101,22 @@ header {
 
 }
 
-.estilo{  /* estilo horario */
+.estilo{  /* FAIXA AMARELA  */
   
   
   max-width: 100%;
-  padding: 10px;
-  background: #fed11290;  
+  padding: 8px;
+  background: #fed11290;
+  
   
 }
 
-
-.sobre{  /* começo estilo sobre */
+.sobre{  /* COMEÇO ESTILO QUEM SOMOS */
    
     background: #242283;  
     max-width: 100%;
     height: 750px;
-    box-shadow: 0px 20px #fed11290;
+    
     padding-top: 100px;
     align-self: auto;
 
@@ -152,13 +146,10 @@ header {
     font-weight: 40;
     
 }
-   
 
-
-
-.svg_quem_somos{
+.svg_quem_somos{ /* DETALHE SVG QUEM SOMOS*/
    position: absolute;
-    padding-top: 250px;
+    padding-top: 340px;
     width: 100%;
 
 }
@@ -172,14 +163,12 @@ header {
     align-self: auto;
     padding-left: 20px;
     font-family: 'Roboto' ,sans-serif;
-    background: #b3aeae27; 
+    background: #EEECEC; 
 }
 .txt_servicos{ 
     font-family: 'Lobster',sans-serif;
     color:black;
     font-weight: 400;
-    
-    
 
 }
 .txt_servicos h2{
@@ -188,10 +177,9 @@ header {
     text-align: center;
     color: black;
     padding-top: 150px;
-    background: #b3aeae27; 
+    background: #EEECEC; 
     font-weight: 400;
 }
-
 
 .fa-check{/* check serviços*/
     color: #16b911;
@@ -202,7 +190,7 @@ header {
     
 }
 
-#img_esquerda{
+#img_sobre{
     max-width: 100%;
     border-radius: 8px 8px 8px;
     box-shadow: 2px 5px 5px #00000091;
@@ -220,19 +208,16 @@ header {
     
 }
 
-
-
 /*Comeco marcas*/
-
-
 
 .marcas{
     display: flex;
     max-width: 100%;
-    
     justify-content: space-evenly;
     
-    
+    box-shadow: inset -3px -200px 7px #ffffffb0, 
+         inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+        
 }
 .marcash2 h2{
     font-size: 70px;
@@ -263,6 +248,7 @@ header {
     float: left;
     color: #fff;
     font-size: 14px;
+    
 
 }
 .conteudo a {
@@ -280,7 +266,8 @@ header {
     float: right;
     padding-top: 100px ;
     padding-right: 290px;
-    font-weight: normal;    
+    font-weight: normal;   
+     
 }
 
 .maps iframe { 
@@ -289,6 +276,7 @@ header {
     padding-left: 260px;
     height: 350px;
     width: 30%;
+    
     
 }
 
@@ -326,8 +314,6 @@ header {
         margin-top: 15px;
         
 }
-
-
 
 footer{
     padding-top: 30px;
@@ -369,8 +355,171 @@ footer:hover a{
     
 
 }
+.desktop {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  
+  .mobile {
+    display: none;
+  }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    /* Estilos */
+    nav{
+        display: none;
+       
+    }
+    .mobile{
+        display: flex;
+        background-color: white;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        height: 56px;
+        box-shadow: 0 0 5px gray;
+        line-height: 70px;
+        align-items: center;
+        padding-left: 80px;
+        flex-basis: 100%;
+
+        flex-basis: 100%;
+
+    }
+    .mobile img{
+        
+        padding-top: 10px;
+        width: 25px; 
+        height: 25px;
+        
+        bottom: 0px;
+       
+    }
+    .menu_mobile {
+        color: #242283;
+        font-size: 12px;
+        
+    }
+    
+
+    
+    #logo img{
+        display:flex;
+        width: 80px;
+        height: 70px;
+        padding-right: 200px;
+    }
+    .sobre{
+        width: auto;
+        
+        
+        
+        
+    }
+    .descricao h4{
+        font-size: 12px;
+        
+
+    }
+    .svg_quem_somos{
+        padding-top: 375px;
+    }
+    
+    .fa-whatsapp{
+        display: none;
+    }
+    .whatsapp-link{
+        display: none;
+    }
+    
+    
+    .desktop {
+        display: none;
+      }
+    
+    
+    .maps{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+    /* Estilos */
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+/* Estilos */
+}
+
+@media (max-width: 640px){ /*OK A MELHORAR*/
+    header{
+        position: -webkit-sticky; /* fixar cabecalho*/
+        position: sticky; /* fixar cabecalho*/
+        top: 0; /* fixar cabecalho*/
+        box-shadow: 0 0 5px grey;
+    }
+    .menu{
+        display: fixed;
+    }
+    .sobre{ /*QUEM SOMOS*/
+        
+        width: auto;
+        
+        justify-content: center;
+        
+        height: 100px;
+           
+    }
+
+    .imagem_topo img{
+    
+        
+        max-width: 100%;
+        height:400px;
+    }
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 170px;
+    }
+    .sobre{ /*QUEM SOMOS*/
+        
+        width: auto;
+        
+        justify-content: center;
+        
+        
+           
+    }    
+    .marcas{
+        display: none;
+    }
+    .maps {
+        width: 350px;
+        height: 200px;
+        padding-right: 55px;
+        
+        
+    }
+    #boxes{
+        padding-right: 39px;  
+           
+      }
+}
+
+@media screen and (max-width: 768px) { /* ok*/
     body{
         max-width: 100%;
     }
@@ -389,14 +538,14 @@ footer:hover a{
         max-width: 100%;
     }
 
-    .sobre{
+    .sobre{ /*QUEM SOMOS*/
         
         width: auto;
         height: 10%;
         justify-content: center;
         min-height: 250px;
-        
-        
+        height: 600px;
+           
     }
     
     .sobre img{
@@ -413,16 +562,12 @@ footer:hover a{
         align-items: flex-start;
         
         
-       
-
     }
     
-  
     #img_servicos{
         
         width: 320px;
-        height: 320px;
-        
+        height: 320px;   
        
     }
     
@@ -439,15 +584,11 @@ footer:hover a{
         display: block;
         height: 900px;
         
-        
-       
-        
 
     }
     #boxes{
       padding-right: 71px;  
-        
-        
+         
     }
     
     .maps iframe{
@@ -457,22 +598,24 @@ footer:hover a{
         padding-left: 155px;
         padding-top: 0px;
         
-        
     }
 
-
-    svg{
-        visibility: hidden;
-    }
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+         position: absolute;
+         padding-top: 10px;
+         width: 100%;
+     
+     }
     footer{
         max-width: 100%;
     }
+
+
 }
-@media (max-width: 1366px){
+
+@media screen and (max-width: 1366px){   /* ok*/
     
-    .svg_quem_somos{
-        padding: 290px 10px;
-    }
+    
     #cabecalho h2{
         font-size: 55px;
     }
@@ -495,8 +638,8 @@ footer:hover a{
         font-size: 55px;
     }
 
-    #img_esquerda{
-        width: 500px;
+    #img_sobre{
+        width: 480px;
         height: 400px;
     }
     #boxes hr{
@@ -507,6 +650,12 @@ footer:hover a{
         padding-left: 5px;
         padding-right: 20px;
     }
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+        position: absolute;
+         padding-top: 110px;
+         width: 100%;
+     
+     }
     footer {
         text-align: center;
 

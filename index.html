@@ -1,3 +1,27 @@
+<!--   ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|gif|jpg|jpeg|png)$">
+          Header set Cache-Control "max-age=31536000"
+    </FilesMatch>
+    <FilesMatch "\.(css|js)$">
+          Header set Cache-Control "max-age=31536000"
+    </FilesMatch>
+</IfModule>    --> <!-- .htacess cache-->
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,7 +30,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Óleo Maracanã </title>
+       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" class="rel" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,22 +45,33 @@
             <img class="logo_site" typeof="foaf:Image" src="imagens/logo.png" alt="troca de óleo maracanã">
          </div>
 
-         <ul class="menu_mobile">
-            <span class="desktop"></span> <span class="mobile">
-              <div class="mobile">
-                  <span class="img_whatsapp"> <img src="imagens/mensagem-de-bate-papo.png" alt="">  </span> 
-                  <span> WhatsApp </span>
-                  <span class="img_whatsapp"> <img src="imagens/telefone.png" alt="" >  </span>
-                  <span>Ligar</span>  
-                  <span class="img_whatsapp"> <img src="imagens/rota.png" alt="">  </span>
-                  <span>Ver Rotas</span>
-                  
-              </div>
-            </span>
+                <!-- RODAPE MOBILE -->
+             <div class="flex-container"> 
+                <div class="flex-item">
+                    <div class="img_whatsapp"> <img src="imagens/mensagem-de-bate-papo.png" height="28px" width="28px" alt="">  </div> 
+                    <a href="https://wa.me/5513981913239?text=Olá gostaria de tirar uma dúvida. " target="_blank" rel="noopener noreferrer"> <h5>WhatsApp</h5> </a>
+                    </div>
+                    <div class="flex-item">
+                    <div class="img_whatsapp"> <img src="imagens/telefone.png" height="28px" width="28px" alt="" >  </div>
+                    <a href="tel:(13)98191-3239"> <h5>Ligar</h5></a>   
+                    </div>
+                    <div class="flex-item">
+                    <div class="img_whatsapp"> <img src="imagens/rota.png" height="28px" width="28px" alt="">  </div>
+                    <a target="_blank" href="https://www.google.com/maps/dir//Troca+de+%C3%B3leo+Maracan%C3%A3/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce1f45fcf5e8f7:0xcde0d2cf400018ee!2m2!1d-46.511466999999996!2d-24.0388309" rel="noopener noreferrer"> <h5>Ver Rotas</h5> </a>
+                    
+
+                 </div>
+                </div>
+                <!-- RODAPE MOBILE -->
+
+
+
+              
+             </div>
 
 
             <nav>
-                <ul class="menu" > <!--menu-->
+                <ul class="menu" > <!--menu Desktop-->
                 <li> <a href="#topo"alt="home">Home</a>
                 <li> <a href="#sobre" alt="sobre">Sobre</a>
                 <li> <a href="#serviços" alt="serviços">Serviços</a>   
@@ -47,7 +84,7 @@
     </header>
       <a  id="topo"></a>  <!-- scroll behavior -->   
         <div class="imagem_topo" id="topo">
-           <img src="imagens/meio.png" alt="meio_site"><!--Meio imagem-->
+           <img src="imagens/meio.jpg" alt="meio_site"><!--Meio imagem-->
         </div>
            <div class="estilo"><!--listra amarela css-->
                     </div>                 
@@ -61,7 +98,7 @@
                         <path d="M1086.46 261.431C1101.08 261.431 1112.93 251.037 1112.93 238.216C1112.93 225.394 1101.08 215 1086.46 215C1071.85 215 1060 225.394 1060 238.216C1060 251.037 1071.85 261.431 1086.46 261.431Z" fill="#fed112"></path>
                         
                         <path d= "M0 64L60 101.3C120 139 240 213 360 245.3C480 277 600 267 720 234.7C840 203 960 149 1080 149.3C1200 149 1320 203 1380 229.3L1440 256V320H1380C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320H0V64Z" 
-                        fill="#EEeCEC"></path></svg>
+                        fill="#EEECEC"></path></svg>
                     </div>
                        
                     

@@ -8,21 +8,25 @@
     padding: 0;
     
 }
+a ul li {
+    text-decoration: none;
+}
 html{
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
-    
+body{
+    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 #logo img{
    width: 120px;
    height: 80px;
    
    
 }
-body{
-    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 hr{ /* DESIGN HR PARA H1*/
     border-color: #fed112;
     background: #fed112;
@@ -360,47 +364,49 @@ footer:hover a{
     /* ou inline, inline-block */
   }
   
-  .mobile {
+  .flex-container {
     display: none;
   }
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 426px) {
     /* Estilos */
     nav{
         display: none;
        
     }
-    .mobile{
+    .flex-container{
+        
         display: flex;
-        background-color: white;
-        bottom: 0;
         position: fixed;
-        width: 100%;
-        left: 0;
         height: 56px;
-        box-shadow: 0 0 5px gray;
-        line-height: 70px;
-        align-items: center;
-        padding-left: 80px;
-        flex-basis: 100%;
-
-        flex-basis: 100%;
-
-    }
-    .mobile img{
+        width: 100%;
+        bottom: 0; /*FIXAR NA PARTE DE BAIXO */
+        box-shadow: 0 0 5px gray; /*EFEITO */
         
-        padding-top: 10px;
-        width: 25px; 
-        height: 25px;
         
-        bottom: 0px;
-       
     }
-    .menu_mobile {
-        color: #242283;
+    .flex-item{
+        line-height: 18px;
+        flex-basis: 100%;
+        text-align: center;
+        padding-top: 3px;
+        background: #ffffff;
+        flex-basis: 100%;
+        margin: 0 0px;
+        
+        
+    } 
+    .flex-item h5 {
         font-size: 12px;
+        color: #242283;
+        font-weight: 400;
+        
         
     }
+    .flex-item a {
+       text-decoration: none; 
+    }
+    
     
 
     
@@ -447,7 +453,7 @@ footer:hover a{
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1200px) {
     /* Estilos */
 
 

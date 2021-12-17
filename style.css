@@ -18,6 +18,7 @@ html{
 
 body{
     font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-size-adjust: 100%;
 }
 
 #logo img{
@@ -55,7 +56,7 @@ header {
     justify-content: space-around;
     padding: 5px ;
     align-items: center;
-    height: 80px;
+    height: 100%; 
     z-index: 100;
     position: -webkit-sticky; /* fixar cabecalho*/
     position: sticky; /* fixar cabecalho*/
@@ -145,7 +146,7 @@ header {
     font-size: 16px;
     text-align: left;
     padding-left: 40px;
-    padding: 60px ;
+    padding: 40px ;
     line-height: 30px;
     font-weight: 40;
     
@@ -368,12 +369,12 @@ footer:hover a{
     display: none;
   }
 
-@media screen and (min-width: 320px) and (max-width: 426px) {
-    /* Estilos */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    
     nav{
         display: none;
        
-    }
+    }/* Estilos navegador */
     .flex-container{
         
         display: flex;
@@ -381,7 +382,7 @@ footer:hover a{
         height: 56px;
         width: 100%;
         bottom: 0; /*FIXAR NA PARTE DE BAIXO */
-        box-shadow: 0 0 5px gray; /*EFEITO */
+        box-shadow: 0 0 5px gray; /*EFEITO #363434 */
         
         
     }
@@ -417,19 +418,22 @@ footer:hover a{
         padding-right: 200px;
     }
     .sobre{
-        width: auto;
+        width: 100%;
+        height: 700px;
         
         
         
         
     }
+    
     .descricao h4{
         font-size: 12px;
+        
         
 
     }
     .svg_quem_somos{
-        padding-top: 375px;
+        padding-top: 375px !important;
     }
     
     .fa-whatsapp{
@@ -445,35 +449,60 @@ footer:hover a{
       }
     
     
+    
+    .servicos{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .descricao_servicos{
+        display: grid;
+    }
+    .fa-check {
+        padding-top: 24px;
+        ;padding-left: 25px;
+    }
     .maps{
-        display: none;
+        height:250px !important;
+        width: 250px !important;
+    }
+   
+    .maps iframe {
+        width: 350px !important;
+    
+        height: 176px !important;
+    
+    
+        padding-left: 63px !important;
+        padding-right: 1px !important;
+    
+    
+        padding-top: 0px !important;
+    
     }
 
+    #boxes{
+        width: 185px! important;
+        flex-direction: column;
+       
+        
+    }
+    .conteudo{
+        height: 119px;
 
-}
-
-
-@media screen and (max-width: 1200px) {
-    /* Estilos */
-
-
-
-
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-/* Estilos */
-}
+    }
+    footer {
+        position: absolute;
+        font-size: 12px;
+        height: 100px;
+    }
+}   
 
 @media (max-width: 640px){ /*OK A MELHORAR*/
     header{
         position: -webkit-sticky; /* fixar cabecalho*/
         position: sticky; /* fixar cabecalho*/
         top: 0; /* fixar cabecalho*/
-        box-shadow: 0 0 5px grey;
+        box-shadow: 0 0 5px #363434;
     }
     .menu{
         display: fixed;
@@ -519,10 +548,7 @@ footer:hover a{
         
         
     }
-    #boxes{
-        padding-right: 39px;  
-           
-      }
+    
 }
 
 @media screen and (max-width: 768px) { /* ok*/
@@ -566,14 +592,15 @@ footer:hover a{
         max-width: 100%;
         flex-wrap: wrap;
         align-items: flex-start;
-        
+        padding-left: 6px;
+        padding-right: 6px;
         
     }
     
     #img_servicos{
         
-        width: 320px;
-        height: 320px;   
+        width: 100%;
+       
        
     }
     
@@ -618,6 +645,20 @@ footer:hover a{
 
 
 }
+
+
+@media screen and (max-width: 1900px) { /*CORRIGIR NAVEGADOR COM 125% ZOOM*/
+    /* Estilos */
+    
+    .svg_quem_somos{
+        padding-top: 419px;
+        
+    }
+
+
+}
+
+
 
 @media screen and (max-width: 1366px){   /* ok*/
     

@@ -1,0 +1,304 @@
+/*MEDIA PARA RESPONSIVIDADE*/
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    
+    nav{
+        display: none;
+       
+    }/* Estilos navegador */
+    .flex-container{
+        
+        display: flex;
+        position: fixed;
+        height: 56px;
+        width: 100%;
+        bottom: 0; /*FIXAR NA PARTE DE BAIXO */
+        box-shadow: 0 0 5px gray; /*EFEITO #363434 */
+        
+        
+    }
+    .flex-item{
+        line-height: 18px;
+        flex-basis: 100%;
+        text-align: center;
+        padding-top: 3px;
+        background: #ffffff;
+        flex-basis: 100%;
+        margin: 0 0px;
+        
+        
+    } 
+    .flex-item h5 {
+        font-size: 12px;
+        color: #242283;
+        font-weight: 400;
+        
+        
+    }
+    .flex-item a {
+       text-decoration: none; 
+    }
+    #logo img{
+        display:flex;
+        width: 80px;
+        height: 70px;
+        padding-right: 200px;
+    }
+    .sobre{
+        width: 100%;
+        height: 700px;
+        
+    }
+    .svg_quem_somos{
+        padding-top: 375px !important;
+    }
+    
+    
+    .descricao h4{
+        font-size: 12px;
+        
+    }
+    
+    .fa-whatsapp{
+        display: none;
+    }
+    .whatsapp-link{
+        display: none;
+    }
+    
+    
+    .desktop {
+        display: none;
+      }
+    
+    .servicos{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .descricao_servicos{
+        display: grid;
+    }
+    .fa-check {
+        padding-top: 24px;
+        padding-left: 25px;
+    }
+    .maps{
+        height:250px !important;
+        width: 250px !important;
+    }
+   
+    .maps iframe {
+        width: 350px !important;
+        height: 176px !important;
+        padding-left: 63px !important;
+        padding-right: 1px !important;
+        padding-top: 0px !important;
+    }
+
+    #boxes{
+        width: 185px! important;
+        flex-direction: column;
+    }
+    .conteudo{
+        height: 119px;
+    }
+    footer {
+        position: absolute;
+        font-size: 12px;
+        height: 100px;
+    }
+}   
+
+@media (max-width: 640px){ /*OK A MELHORAR*/
+    header{
+        position: -webkit-sticky; /* fixar cabecalho*/
+        position: sticky; /* fixar cabecalho*/
+        top: 0; /* fixar cabecalho*/
+        box-shadow: 0 0 5px #363434;
+    }
+    .menu{
+        display: fixed;
+    }
+    .sobre{ /*QUEM SOMOS*/
+        
+        width: auto;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .imagem_topo img{
+        max-width: 100%;
+        height:400px;
+    }
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 170px;
+    }
+    .sobre{ /*QUEM SOMOS*/
+        width: auto;
+        justify-content: center;
+    }    
+    .marcas{
+        display: none;
+    }
+    .maps {
+        width: 350px;
+        height: 200px;
+        padding-right: 55px;
+    }
+    
+}
+
+@media (max-width: 768px) { /* ok*/
+    body{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+    }
+    #topo{
+        max-width: 100%;
+    }
+
+    .sobre{ /*QUEM SOMOS*/
+        
+        width: auto;
+        height: 10%;
+        justify-content: center;
+        min-height: 250px;
+        height: 600px;
+           
+    }
+    
+    .sobre img{
+        display: none;
+        
+    }
+    
+    .img_quem_somos{
+        padding-top: 2px;
+    }
+    .servicos{
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-left: 6px;
+        padding-right: 6px;
+        
+    }
+    
+    #img_servicos{
+        
+        width: 100%;
+    }
+    
+    .fa-check{
+        padding-top: 40px;
+    }
+   
+    #little{
+        display: none;
+        
+    }
+    .contato{
+        display: block;
+        height: 900px;
+        
+    }
+    #boxes{
+      padding-right: 71px;  
+         
+    }
+    
+    .maps iframe{
+        width: 470px;
+        height: 260px;
+        padding-left: 155px;
+        padding-top: 0px;
+        
+    }
+
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+         position: absolute;
+         padding-top: 10px;
+         width: 100%;
+     
+     }
+    footer{
+        max-width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 1900px) { /*CORRIGIR NAVEGADOR COM 125% ZOOM*/
+    .svg_quem_somos{
+        padding-top: 419px;
+        
+    }
+
+
+}
+
+@media (max-width: 1366px){   /* ok*/
+    
+    
+    #cabecalho h2{
+        font-size: 55px;
+    }
+    
+    #boxes{
+        padding-right: 71px;
+    }
+    
+
+    .descricao_servicos h4 {
+        font-size: 14px;
+
+    }
+    .descricao_servicos i{
+        font-size: 14px;
+    }
+    .txt_servicos h2{
+        font-size: 55px;
+    }
+
+    #img_sobre{
+        width: 480px;
+        height: 400px;
+    }
+    #boxes hr{
+        
+        margin: 0;
+        height: 2px;
+        
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
+        position: absolute;
+         padding-top: 110px;
+         width: 100%;
+     
+     }
+    footer {
+        text-align: center;
+
+    }
+
+}
+
+#ultimo + div{/*RETIRAR IMG WEBHOST*/
+    visibility:hidden;
+}

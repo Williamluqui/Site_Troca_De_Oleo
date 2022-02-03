@@ -1,715 +1,840 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Teko&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Teko&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 a ul li {
-    text-decoration: none;
+  text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-}
-
-body{
-    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-size-adjust: 100%;
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-#logo img{
-   width: 120px;
-   height: 80px;
-   
-   
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-size-adjust: 100%;
 }
 
-hr{ /* DESIGN HR PARA H1*/
-    border-color: #fed112;
-    background: #fed112;
-    width: 90px;
-    height: 3px;
-    margin: 0 auto;
-    border-radius: 50px; /*arredondar bordas hr*/
-    
-}
-#boxes hr{ /* DESIGN HR PARA DIV BOX */
-    margin: 0;
-    height: 2px;
-    padding-left: 5px;
-    padding-right: 20px;
+#logo img {
+  width: 120px;
+  height: 80px;
 }
 
-nav li{
-    list-style: none; 
-    display: inline;
-    
+hr {
+  /* DESIGN HR PARA H1*/
+  border-color: #fed112;
+  background: #fed112;
+  width: 90px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 50px; /*arredondar bordas hr*/
+}
+#boxes hr {
+  /* DESIGN HR PARA DIV BOX */
+  margin: 0;
+  width: 20px;
+  height: 2px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
 }
 header {
-    background: #242283 ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5px ;
-    align-items: center;
-    height: 100%; 
-    z-index: 100;
-    position: -webkit-sticky; /* fixar cabecalho*/
-    position: sticky; /* fixar cabecalho*/
-    top: 0; /* fixar cabecalho*/
-}   
+  background: #242283;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+  align-items: center;
+  height: 100%;
+  z-index: 100;
+  position: -webkit-sticky; /* fixar cabecalho*/
+  position: sticky; /* fixar cabecalho*/
+  top: 0; /* fixar cabecalho*/
+}
 .menu a {
-    text-decoration: none;
-    color: white;
-    margin:0;
-    border: 0px solid #242283; 
-    background: #242283;
-    color:rgb(255, 255, 255);
-    /* cantos arredondados */
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    font-size: 1.1rem;
-    transition: .2s ease-in;
-   
-
-
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  border: 0px solid #242283;
+  background: #242283;
+  color: rgb(255, 255, 255);
+  /* cantos arredondados */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: 0.2s ease-in;
 }
 
-.menu{     /* estilo menu */
-    display: flex;
-    cursor: pointer;
-    
+.menu {
+  /* estilo menu */
+  display: flex;
+  cursor: pointer;
 }
 .menu li a {
-      
-    display: block;
-    padding: 8px;
-    margin-left: 8px;
-    text-transform: uppercase;   /* Texto pagina pequena e letras maiusculas*/
-    
+  display: block;
+  padding: 8px;
+  margin-left: 8px;
+  text-transform: uppercase; /* Texto pagina pequena e letras maiusculas*/
 }
-.menu a:hover { 
-    background: #fed112;
-    color: #000; 
-    border-color: #000  
+.menu a:hover {
+  background: #fed112;
+  color: #000;
+  border-color: #000;
 }
-.imagem_topo img{
-    
-    width: 100%;
-    max-width: 100%;
-    height:800px;
+.imagem_topo {
+  background-repeat: round;
+  background-image: url("../imagens/meio.jpg");
+  width: 100%;
 
+  height: 720px;
 }
 
-.estilo{  /* FAIXA AMARELA  */
-  
-  
+.estilo {
+  /* FAIXA AMARELA  */
+
   max-width: 100%;
   padding: 8px;
+  margin: auto;
   background: #fed11290;
-  
-  
 }
 
-.sobre{  /* COMEÇO ESTILO QUEM SOMOS */
-   
-    background: #242283;  
-    max-width: 100%;
-    height: 750px;
-    
-    padding-top: 100px;
-    align-self: auto;
+.sobre {
+  /* COMEÇO ESTILO QUEM SOMOS */
 
-    
-}
-.txt_sobre h2{
-    color: #fff;
-    text-align: center;
-    font-family: 'teko',sans-serif;
-    font-size: 70px;
-    font-weight: 40;
+  background: #242283;
+  max-width: 100%;
+  height: 750px;
 
+  padding-top: 100px;
+  align-self: auto;
 }
-.img_quem_somos{
-    display: flex;
-    padding-left: 20px;
-    padding-top: 100px;
- 
+.txt_sobre h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "teko", sans-serif;
+  font-size: 70px;
+  font-weight: 40;
 }
-.descricao h4{
-    color: #fff;
-    font-size: 16px;
-    text-align: left;
-    padding-left: 40px;
-    padding: 40px ;
-    line-height: 30px;
-    font-weight: 40;
-    
+.img_quem_somos {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+.descricao h4 {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 40px;
+  padding: 40px;
+  line-height: 30px;
+  font-weight: 40;
 }
 
-.svg_quem_somos{ /* DETALHE SVG QUEM SOMOS*/
-   position: absolute;
-    padding-top: 340px;
-    width: 100%;
-
+.svg_quem_somos {
+  /* DETALHE SVG QUEM SOMOS*/
+  position: absolute;
+  padding-top: 340px;
+  width: 100%;
 }
-
 
 /* serviços realizados*/
-.servicos{
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    align-self: auto;
-    padding-left: 20px;
-    font-family: 'Roboto' ,sans-serif;
-    background: #EEECEC; 
+.servicos {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-self: auto;
+  padding-left: 20px;
+  background: #eeecec;
 }
-.txt_servicos{ 
-    font-family: 'Lobster',sans-serif;
-    color:black;
-    font-weight: 400;
-
+.txt_servicos {
+  color: black;
+  font-weight: 400;
 }
-.txt_servicos h2{
-    font-family: 'teko',sans-serif;
-    font-size: 70px;
-    text-align: center;
-    color: black;
-    padding-top: 150px;
-    background: #EEECEC; 
-    font-weight: 400;
+.txt_servicos h2 {
+  font-family: "teko", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: black;
+  padding-top: 150px;
+  background: #eeecec;
+  font-weight: 400;
 }
 
-.fa-check{/* check serviços*/
-    color: #16b911;
-    padding-left: 100px;
-    font-size: 25px;
-    padding-top: 60px;
-    padding-right: 10px;
-    
+.fa-check {
+  /* check serviços*/
+  color: #16b911;
+  padding-left: 100px;
+  font-size: 25px;
+  padding-top: 60px;
+  padding-right: 10px;
 }
 
-#img_sobre{
-    max-width: 100%;
-    border-radius: 8px 8px 8px;
-    box-shadow: 2px 5px 5px #00000091;
-
+#img_sobre {
+  max-width: 100%;
+  border-radius: 8px 8px 8px;
+  box-shadow: 2px 5px 5px #00000091;
 }
-#img_servicos{
-    max-width: 100%;
-    border-radius: 8px 8px 8px;
-    box-shadow: 2px 5px 5px #00000091;
-
-}
-.descricao_servicos h4{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    
+#img_servicos {
+  max-width: 100%;
+  border-radius: 8px 8px 8px;
+  box-shadow: 2px 5px 5px #00000091;
 }
 
 /*Comeco marcas*/
 
-.marcas{
-    display: flex;
-    max-width: 100%;
-    justify-content: space-evenly;
-    
-    box-shadow: inset -3px -200px 7px #ffffffb0, 
-         inset 3px 3px 5px rgba(94, 104, 121, 0.692);
-        
-}
-.marcash2 h2{
-    font-size: 70px;
-    font-family: 'teko' ,sans-serif;
-    text-align: center;
-    font-weight: 400;
-    padding-top: 50px;
-    padding-bottom: 30px;
-
+.marcas {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-shadow: inset -3px -200px 7px #ffffffb0,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.692);
 }
 
-
-
-
+.marcash2 h2 {
+  font-size: 70px;
+  font-family: "teko", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 /*Começo  do conteudo contato*/
-.contato{
-
-    width: 100%;
-    background:#242283;
-    height:600px;
-    max-width: 100%;
-    
+.contato {
+  width: 100%;
+  background: #242283;
+  height: 650px;
+  max-width: 100%;
 }
 
-.conteudo{ /* BOX CONTEUDO -CONTATO - LOCALIZACAO */
-    height: 200px;
-    width: 230px;
-    float: left;
-    color: #fff;
-    font-size: 14px;
-    
-
+.conteudo {
+  /* BOX CONTEUDO -CONTATO - LOCALIZACAO */
+  height: 200px;
+  width: 200px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
 }
 .conteudo a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 .conteudo abbr {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 
-#boxes{
-    width: 500px;
-    max-width: 100%;
-    float: right;
-    padding-top: 100px ;
-    padding-right: 290px;
-    font-weight: normal;   
-     
+#boxes {
+  width: 500px;
+  max-width: 100%;
+  float: right;
+  padding-top: 100px;
+  padding-right: 290px;
+  font-weight: normal;
+}
+.maps {
+  float: left;
+  padding-top: 80px;
+}
+.maps iframe {
+  align-items: center;
+  width: 450px;
+  height: 350px;
+  padding-left: 290px;
 }
 
-.maps iframe { 
-    max-width: 100%;
-    padding-top:80px;
-    padding-left: 260px;
-    height: 350px;
-    width: 30%;
-    
-    
+.texto_contato h2 {
+  /*TEXTO TOPO 'CONTATO' */
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
 }
 
-.texto_contato h2{ /*TEXTO TOPO 'CONTATO' */
-    text-align: center;
-    padding-top: 20px;
-    color: #ffffff;
-    font-size: 70px;
-    font-family: 'Teko', sans-serif;
-    font-weight: 400;
+.google_reviews {
+  padding-top: 30px;
 }
 
-.google_reviews{
-    padding-top: 30px;
+.whatsapp-link {
+  /*AJUSTES WHATSAPP*/
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 3px 5px 13px rgb(87, 87, 87);
+  z-index: 1000;
+}
+.fa-whatsapp {
+  margin-top: 15px;
 }
 
-
-
-.whatsapp-link{   /*AJUSTES WHATSAPP*/
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 3px 5px 13px rgb(87, 87, 87);
-    z-index: 1000;
-    
-}
-.fa-whatsapp{
-        margin-top: 15px;
-        
-}
-
-footer{
-    padding-top: 30px;
-    height: 60px;
-    max-width: 100%;
-    text-align: center;
-    background: #fed31290;
-    font-size: 14px;
-
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-    transition: .2s ease-in;
-    
-    
-    
-}
-footer:hover a{
-    color: blue;
-    
-
-}/* cabeçalho*/
-
-.redes{
-    padding: 5px;
-    margin: 5px 2px;
-
+.redes {
+  padding: 5px;
+  margin: 5px 2px;
 }
 .redes a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.icone:hover{
-    cursor: pointer;
-    transform: translateY(-5px);
-    transition: all 0.4s ease-out;
-    box-shadow: 4px 15px 16px 0px rgba(50, 50, 50, 0.39);
-    
-
+.icone:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-out;
+  box-shadow: 4px 15px 16px 0px rgba(50, 50, 50, 0.39);
 }
 .desktop {
-    display: block;
-    /* ou inline, inline-block */
-  }
+  /* Menu rodape media query para mobile*/
+  display: block;
+  /* ou inline, inline-block */
+}
+
+.flex-container {
+  /* Menu rodape media query para mobile*/
+  display: none;
+}
+/* menu mobile */
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem; /* espaçamento entre as palavras*/
+}
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+#btn-mobile {
+  display: none;
+}
+
+footer {
+  padding-top: 30px;
+  height: 40px;
+  max-width: 100%;
+  text-align: center;
+  background: #fed31290;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in;
+}
+footer:hover a {
+  color: blue;
+}
+#menu{display: none; /* esconder menu mobile*/
+}
   
+#ultimo + div {
+  /*RETIRAR IMG WEBHOST*/
+  visibility: hidden;
+} /* min = maior , max = menor*/
+@media (max-width: 375px) {
+  
+  
+  .menu{
+    display: none !important;
+  }
+/* Estilos navegador */
   .flex-container {
+    display: flex;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    bottom: 0; /*FIXAR NA PARTE DE BAIXO */
+    box-shadow: 0 0 5px gray; /*EFEITO #363434 */
+  }
+  .flex-item {
+    line-height: 18px;
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 3px;
+    background: #ffffff;
+    flex-basis: 100%;
+    margin: 0 0px;
+  }
+  .flex-item h5 {
+    font-size: 12px;
+    color: #242283;
+    font-weight: 400;
+  }
+  .flex-item a {
+    text-decoration: none;
+  }
+  #logo img {
+    width: 80px;
+    height: 70px;
+    padding-right:190px !important;
+  }
+  .sobre {
+    width: 100%;
+    height: 700px;
+  }
+  .svg_quem_somos {
     display: none;
   }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
-    
-    nav{
-        display: none;
-       
-    }/* Estilos navegador */
-    .flex-container{
-        
-        display: flex;
-        position: fixed;
-        height: 56px;
-        width: 100%;
-        bottom: 0; /*FIXAR NA PARTE DE BAIXO */
-        box-shadow: 0 0 5px gray; /*EFEITO #363434 */
-        
-        
-    }
-    .flex-item{
-        line-height: 18px;
-        flex-basis: 100%;
-        text-align: center;
-        padding-top: 3px;
-        background: #ffffff;
-        flex-basis: 100%;
-        margin: 0 0px;
-        
-        
-    } 
-    .flex-item h5 {
-        font-size: 12px;
-        color: #242283;
-        font-weight: 400;
-        
-        
-    }
-    .flex-item a {
-       text-decoration: none; 
-    }
-    
-    
+  .descricao h4 {
+    font-size: 12px;
+  }
 
-    
-    #logo img{
-        display:flex;
-        width: 80px;
-        height: 70px;
-        padding-right: 200px;
-    }
-    .sobre{
-        width: 100%;
-        height: 700px;
-        
-        
-        
-        
-    }
-    
-    .descricao h4{
-        font-size: 12px;
-        
-        
+  .whatsapp-link {
+    display: none;
+  }
 
-    }
-    .svg_quem_somos{
-        padding-top: 375px !important;
-    }
-    
-    .fa-whatsapp{
-        display: none;
-    }
-    .whatsapp-link{
-        display: none;
-    }
-    
-    
-    .desktop {
-        display: none;
-      }
-    
-    
-    
-    .servicos{
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-    .descricao_servicos{
-        display: grid;
-    }
-    .fa-check {
-        padding-top: 24px;
-        ;padding-left: 25px;
-    }
-    .maps{
-        height:250px !important;
-        width: 250px !important;
-    }
-   
-    .maps iframe {
-        width: 350px !important;
-    
-        height: 176px !important;
-    
-    
-        padding-left: 63px !important;
-        padding-right: 1px !important;
-    
-    
-        padding-top: 0px !important;
-    
-    }
+  .desktop {
+    display: none;
+  }
 
-    #boxes{
-        width: 185px! important;
-        flex-direction: column;
-       
-        
-    }
-    .conteudo{
-        height: 119px;
+  .servicos {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .descricao_servicos {
+    display: grid;
+  }
+  .fa-check {
+    padding-top: 24px;
+    padding-left: 25px;
+  }
+  .contato {
+    height: 750px !important;
+  }
+  .maps {
+    display: flex;
+    height: 250px !important;
+    width: 30px !important;
+  }
 
-    }
-    footer {
-        position: absolute;
-        font-size: 12px;
-        height: 100px;
-    }
-}   
+  .maps iframe {
+    text-align: center;
+    height: 176px !important;
+    padding-left: 25px !important;
+    padding-right: 1px !important;
+    padding-top: 0px !important;
+  }
 
-@media (max-width: 640px){ /*OK A MELHORAR*/
-    header{
-        position: -webkit-sticky; /* fixar cabecalho*/
-        position: sticky; /* fixar cabecalho*/
-        top: 0; /* fixar cabecalho*/
-        box-shadow: 0 0 5px #363434;
-    }
-    .menu{
-        display: fixed;
-    }
-    .sobre{ /*QUEM SOMOS*/
-        
-        width: auto;
-        
-        justify-content: center;
-        
-        height: 100px;
-           
-    }
+  #boxes {
+    padding-right: 0 !important;
+    width: 343px !important;
+    padding-top: 7px !important;
+  }
+  .conteudo {
+    width: 165px !important;
+    height: 119px !important;
+    font-size: 13px;
+  }
 
-    .imagem_topo img{
+  #menu {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    display: block;
+    background: #e7e7e7;
+    height: 0px;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #btn-mobile {
+    border: 0;
+    display: flex;
+    padding: 0.5rem 1rem;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menu-hamburger {
+    color: darkorange;
+    border-top: 2px solid;
+    width: 30px;
+  }
+  #menu-hamburger::after,
+  #menu-hamburger::before {
+    height: 2px;
+    content: "";
+    display: block;
+    width: 20px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #menu-hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #menu-hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #menu-hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  footer {
+    position: absolute;
+    font-size: 12px;
+    height: 100px;
+ }
+} 
+@media (max-width: 425px) {
+  header{
+    padding: 0px !important;
     
-        
-        max-width: 100%;
-        height:400px;
-    }
-    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
-        position: absolute;
-        margin: 0;
-        width: 100%;
-        height: 170px;
-    }
-    .sobre{ /*QUEM SOMOS*/
-        
-        width: auto;
-        
-        justify-content: center;
-        
-        
-           
-    }    
-    .marcas{
-        display: none;
-    }
-    .maps {
-        width: 350px;
-        height: 200px;
-        padding-right: 55px;
-        
-        
-    }
-    
+  }
+  .menu {
+    display: none;
+  } /* Estilos navegador */
+  .flex-container {
+    display: flex;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    bottom: 0; /*FIXAR NA PARTE DE BAIXO */
+    box-shadow: 0 0 5px gray; /*EFEITO #363434 */
+  }
+  .flex-item {
+    line-height: 18px;
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 3px;
+    background: #ffffff;
+    flex-basis: 100%;
+    margin: 0 0px;
+  }
+  .flex-item h5 {
+    font-size: 12px;
+    color: #242283;
+    font-weight: 400;
+  }
+  .flex-item a {
+    text-decoration: none;
+  }
+  #logo img {
+    width: 80px;
+    height: 70px;
+    padding-right: 235px;
+  }
+  .sobre {
+    width: 100%;
+    height: 700px;
+  }
+  .svg_quem_somos {
+    display: none;
+  }
+
+  .descricao h4 {
+    font-size: 12px;
+  }
+
+  .whatsapp-link {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .servicos {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .descricao_servicos {
+    display: grid;
+  }
+  .fa-check {
+    padding-top: 24px;
+    padding-left: 25px;
+  }
+  .contato {
+    height: 750px !important;
+  }
+  .maps {
+    height: 250px !important;
+    width: 30px !important;
+  }
+
+  .maps iframe {
+    text-align: center;
+    width: 340px !important;
+    height: 170px !important;
+    padding-left: 25px !important;
+    padding-right: 1px !important;
+    padding-top: 0px !important;
+  }
+
+  #boxes {
+    padding-right: 0 !important;
+    width: 373px;
+    padding-top: 2px;
+  }
+  .conteudo {
+    width: 183px;
+    height: 119px;
+  }/*menu mobile*/
+  #menu {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    display: block;
+    background: #242283;
+    height: 0px;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  #nav.active #menu {
+    height: calc(40vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #btn-mobile {
+    border: 0;
+    display: flex;
+    /* padding: 0.5rem 1rem; */
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menu-hamburger {
+    color: #fed112;
+    border-top: 2px solid;
+    width: 28px;
+  }
+  #menu-hamburger::after,
+  #menu-hamburger::before {
+    height: 2px;
+    content: "";
+    display: block;
+    width: 28px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #menu-hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #menu-hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #menu-hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }/*fim menu mobile*/
+  footer {
+    max-width: 100%;
+    font-size: 12px;
+    height: 100px;
+  }
 }
 
-@media screen and (max-width: 768px) { /* ok*/
-    body{
-        max-width: 100%;
-    }
-    header{
-        max-width: 100%;
-    }
-    nav{
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    nav ul {
-        flex-direction: row;
-        width: 100%;
-    }
-    #topo{
-        max-width: 100%;
-    }
+@media (max-width: 640px) {
+  /*OK A MELHORAR*/
+  header {
+    position: -webkit-sticky; /* fixar cabecalho*/
+    position: sticky; /* fixar cabecalho*/
+    top: 0; /* fixar cabecalho*/
+    box-shadow: 0 0 5px #363434;
+  }
+  .menu {
+    display: fixed;
+  }
+  .sobre {
+    /*QUEM SOMOS*/
 
-    .sobre{ /*QUEM SOMOS*/
-        
-        width: auto;
-        height: 10%;
-        justify-content: center;
-        min-height: 250px;
-        height: 600px;
-           
-    }
-    
-    .sobre img{
-        display: none;
-        
-    }
-    
-    .img_quem_somos{
-        padding-top: 2px;
-    }
-    .servicos{
-        max-width: 100%;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding-left: 6px;
-        padding-right: 6px;
-        
-    }
-    
-    #img_servicos{
-        
-        width: 100%;
-       
-       
-    }
-    
-    .fa-check{
-        padding-top: 40px;
-    }
-   
-   
-    #little{
-        display: none;
-        
-    }
-    .contato{
-        display: block;
-        height: 900px;
-        
+    width: auto;
+    justify-content: center;
+    height: 100px;
+  }
 
-    }
-    #boxes{
-      padding-right: 71px;  
-         
-    }
-    
-    .maps iframe{
-        
-        width: 470px;
-        height: 260px;
-        padding-left: 155px;
-        padding-top: 0px;
-        
-    }
+  .imagem_topo img {
+    max-width: 100%;
+    height: 400px;
+  }
+  .svg_quem_somos svg {
+    /* DETALHE SVG QUEM SOMOS*/
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 170px;
+  }
+  .sobre {
+    /*QUEM SOMOS*/
+    width: auto;
+    justify-content: center;
+  }
 
-    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
-         position: absolute;
-         padding-top: 10px;
-         width: 100%;
-     
-     }
-    footer{
-        max-width: 100%;
-    }
-
-
+  .maps {
+    width: 350px;
+    height: 200px;
+    padding-right: 55px;
+  }
 }
 
+@media (max-width: 768px) {
+  /* ok*/
+  body {
+    max-width: 100%;
+  }
+  header {
+    max-width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav ul {
+    flex-direction: row;
+    width: 100%;
+  }
+  #topo {
+    max-width: 100%;
+  }
 
-@media screen and (max-width: 1900px) { /*CORRIGIR NAVEGADOR COM 125% ZOOM*/
-    /* Estilos */
-    
-    .svg_quem_somos{
-        padding-top: 419px;
-        
-    }
+  .sobre {
+    /*QUEM SOMOS*/
 
+    width: auto;
+    height: 10%;
+    justify-content: center;
+    min-height: 250px;
+    height: 600px;
+  }
 
+  .sobre img {
+    display: none;
+  }
+
+  .img_quem_somos {
+    padding-top: 2px;
+  }
+  .servicos {
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  #img_servicos {
+    width: 100%;
+  }
+
+  .fa-check {
+    padding-top: 40px;
+  }
+  .conteudo {
+    height: 160px;
+  }
+
+  .contato {
+    display: block;
+    height: 900px;
+  }
+  #boxes {
+    padding-right: 33px;
+  }
+
+  .maps iframe {
+    width: 470px;
+    height: 260px;
+    padding-left: 155px;
+    padding-top: 0px;
+  }
+
+  .svg_quem_somos svg {
+    /* DETALHE SVG QUEM SOMOS*/
+    position: absolute;
+    padding-top: 32px;
+    width: 100%;
+  }
+  footer {
+    max-width: 100%;
+  }
 }
 
-
-
-@media screen and (max-width: 1366px){   /* ok*/
-    
-    
-    #cabecalho h2{
-        font-size: 55px;
-    }
-    
-    #boxes{
-        padding-right: 71px;
- 
-        
-    }
-    
-
-    .descricao_servicos h4 {
-        font-size: 14px;
-
-    }
-    .descricao_servicos i{
-        font-size: 14px;
-    }
-    .txt_servicos h2{
-        font-size: 55px;
-    }
-
-    #img_sobre{
-        width: 480px;
-        height: 400px;
-    }
-    #boxes hr{
-        
-        margin: 0;
-        height: 2px;
-        
-        padding-left: 5px;
-        padding-right: 20px;
-    }
-    .svg_quem_somos svg{ /* DETALHE SVG QUEM SOMOS*/
-        position: absolute;
-         padding-top: 110px;
-         width: 100%;
-     
-     }
-    footer {
-        text-align: center;
-
-    }
-
+@media (max-width: 1900px) {
+  /*CORRIGIR NAVEGADOR COM 125% ZOOM*/
+  .svg_quem_somos {
+    padding-top: 419px;
+  }
 }
 
-#ultimo + div{/*RETIRAR IMG WEBHOST*/
-    visibility:hidden;
+@media (max-width: 1366px) {
+  /* ok*/
+
+  #cabecalho h2 {
+    font-size: 55px;
+  }
+
+  #boxes {
+    padding-right: 71px;
+  }
+
+  .descricao_servicos h4 {
+    font-size: 14px;
+  }
+  .descricao_servicos i {
+    font-size: 14px;
+  }
+  .txt_servicos h2 {
+    font-size: 55px;
+  }
+
+  #img_sobre {
+    width: 480px;
+    height: 400px;
+  }
+  #boxes hr {
+    margin: 0;
+    height: 2px;
+
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  .svg_quem_somos svg {
+    /* DETALHE SVG QUEM SOMOS*/
+    position: absolute;
+    padding-top: 67px;
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
 }

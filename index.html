@@ -37,8 +37,8 @@ ExpiresDefault "access 1 month"
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" class="rel" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/style.css" media="Only screen and (color)" />
-        <link rel="stylesheet" href="/css/media.css">
+        <link rel="stylesheet" href="css/style.css"  />
+        <!-- <link rel="stylesheet" href="css/media.css"> -->
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
         </head>
 
@@ -49,8 +49,22 @@ ExpiresDefault "access 1 month"
             <!--logo-->
             <img class="logo_site" typeof="foaf:Image" src="imagens/logo.png" alt="troca de óleo maracanã">
             </div>
+             <!-- Menu Mobile -->
+     <nav id="nav">
+       <button id="btn-mobile">
+        
+       <span id="menu-hamburger" ></span>
+       </button>
+    
+        <ul id="menu">
+            <li><a href="#topo">HOME</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#serviços">SERVIÇOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </nav> 
 
-            <!-- RODAPE MOBILE -->
+            <!-- RODAPE MOBILE Menu rodape media query para mobile --> 
             <div class="flex-container">
             <div class="flex-item">
                 <a href="https://wa.me/5513981913239?text=Olá gostaria de tirar uma dúvida. " target="_blank" rel="noopener noreferrer">
@@ -85,15 +99,14 @@ ExpiresDefault "access 1 month"
 
             </div>
         </header>
-        <a id="topo"></a> <!-- scroll behavior -->
+        
         <div class="imagem_topo" id="topo">
-            <img src="imagens/meio.jpg" alt="meio_site">
-            <!--Meio imagem-->
+           
         </div>
         <div class="estilo">
             <!--listra amarela css-->
         </div>
-        <a id="sobre"></a> <!--  scroll behavior -->
+        
         </div>
         <div class="sobre" id="sobre">
             <!--começo Quem somos-->
@@ -126,7 +139,7 @@ ExpiresDefault "access 1 month"
             </div>
         </div>
         <!--  FIM  -->
-        <!--<a  id="serviços"></a>   scroll behavior -->
+        
         <div class="txt_servicos" id="serviços">
 
             <h2>Nossos Serviços
@@ -167,14 +180,14 @@ ExpiresDefault "access 1 month"
             </h2>
         </div>
         <div class="marcas">
-
+            
             <img src="imagens/lubrax.png" alt="imagem lubrax">
             <img src="imagens/acdelco.png" alt="imagem acdelco">
             <img src="imagens/mobil.png" alt="imagem mobil">
             <img src="imagens/evora.png" alt="imagem evora">
-            <img src="imagens/total.png" alt="imagem evora">
+            <img src="imagens/total.png" alt="imagem total">
             <img src="imagens/littletrees.png" id="little" alt="imagem littletees">
-
+        
         </div>
 
         </div>
@@ -187,8 +200,14 @@ ExpiresDefault "access 1 month"
             </h2>
             </div>
 
+            <div class="maps">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1821.8889489113844!2d-46.5119857!3d-24.0388961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1f45fcf5e8f7%3A0xcde0d2cf400018ee!2sTroca%20de%20%C3%B3leo%20Maracan%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1638912140964!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> 
+            
+
             <div id="boxes">
-            <div class="conteudo" id="box">
+             <div class="conteudo" id="box">
                 <h2> LOCALIZAÇÃO
                 <hr>
                 </h2> <br>
@@ -217,25 +236,27 @@ ExpiresDefault "access 1 month"
                 <h2> FIQUE CONOSCO!
                 <hr>
                 </h2>
-                <section>
+                
                 <div class="redes" id="redes_sociais">
                     <a href="https://www.instagram.com/trocadeoleomaracana/" target="_blank" rel="noreferrer"> <img src="imagens/insta.png" alt="instagram" class="icone"> </a>
                     <a href="https://www.facebook.com/trocadeoleomaracana/" target="_blank" rel="noreferrer"> <img src="imagens/facebook.png" alt="facebook" class="icone"> </a>
                 </div>
-                </section>
+               
             </div>
+
+                
+
             </div>
-            <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1821.8889489113844!2d-46.5119857!3d-24.0388961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1f45fcf5e8f7%3A0xcde0d2cf400018ee!2sTroca%20de%20%C3%B3leo%20Maracan%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1638912140964!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            
         </div>
         <footer>
-            <strong> &copy; 2021 Troca de Óleo Maracanã - Todos direitos reservados |<a rel="noreferrer" target="_blank" href="https://wluqui.dev"> v.1.0 &#8734; William Luqui </strong></a>
+            <strong> &copy; 2021 Troca de Óleo Maracanã - Todos direitos reservados |<a rel="noreferrer" target="_blank" href="https://wluqui.dev"> v.1.0 &#8734; wLuqui </strong></a>
         </footer>
         <a class="whatsapp-link" href="https://wa.me/5513981913239?text=Olá gostaria de tirar uma dúvida. " target="_blank" rel="noopener noreferrer">
             <!--Whatsapp icon-->
             <i class="fab fa-whatsapp"></i>
         </a>
+        <script src="script.js"></script>
         <script src="https://apps.elfsight.com/p/platform.js" defer> </script>
         <div id="ultimo"></div>
         <!--tirar img 000web-->
